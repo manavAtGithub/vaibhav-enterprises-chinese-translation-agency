@@ -119,8 +119,8 @@ npm run preview
 
 ### Developer
 
-# Manav
-Full-Stack Developer
+## Manav
+- Full-Stack Developer
 
 ### License
 
