@@ -117,15 +117,16 @@ npm run build
 npm run preview
 ```
 
-### Developer
+## Developer
 
-## Manav
-- Full-Stack Developer
+**Manav**  
+Full-Stack Developer
 
-### License
+## License
 
-This project is intended for personal and commercial use by Nitesh Raj.
+This project is intended for personal and commercial use by **Nitesh Raj**.  
 All content and branding are proprietary unless stated otherwise.
+
 
 
 ---
