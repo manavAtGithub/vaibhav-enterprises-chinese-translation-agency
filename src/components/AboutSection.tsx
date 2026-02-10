@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
 import { ShieldCheck, Handshake, BookOpen } from "lucide-react";
+import aboutPhoto from "@/assets/nitesh-raj.jpeg"
+
 
 const highlights = [
   { icon: Handshake, title: "Cultural Bridge", desc: "Deep understanding of both Chinese and Indian business cultures ensures seamless communication." },
@@ -12,16 +14,28 @@ const AboutSection = () => {
     <section id="about" className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-12 items-center">
-          {/* Photo placeholder */}
           <motion.div
-            initial={{ opacity: 0, x: -40 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="bg-accent rounded-2xl aspect-[4/5] flex items-center justify-center"
-          >
-            <span className="text-accent-foreground/50 text-sm font-medium">Professional Photo</span>
-          </motion.div>
+  initial={{ opacity: 0, x: -40 }}
+  whileInView={{ opacity: 1, x: 0 }}
+  viewport={{ once: true }}
+  transition={{ duration: 0.6 }}
+  className="bg-accent rounded-2xl aspect-[4/5] overflow-hidden"
+>
+  {aboutPhoto ? (
+    <img
+      src={aboutPhoto}
+      alt="Agency professional interpretation work"
+      className="w-full h-full object-cover"
+    />
+  ) : (
+    <div className="flex items-center justify-center h-full">
+      <span className="text-accent-foreground/50 text-sm font-medium">
+        Professional Photo
+      </span>
+    </div>
+  )}
+</motion.div>
+
 
           <motion.div
             initial={{ opacity: 0, x: 40 }}
@@ -30,14 +44,17 @@ const AboutSection = () => {
             transition={{ duration: 0.6 }}
           >
             <h2 className="text-3xl md:text-4xl font-serif font-bold text-foreground mb-6">
-              About <span className="text-primary">Nitesh Raj</span>
-            </h2>
-            <p className="text-muted-foreground leading-relaxed mb-4">
-              With over a decade of experience bridging communication between Chinese-speaking clients and Indian businesses, Nitesh Raj is one of India's most trusted Mandarin interpreters. His expertise spans boardroom negotiations, factory floors, and international trade events.
-            </p>
-            <p className="text-muted-foreground leading-relaxed mb-8">
-              Having worked with Fortune 500 companies, government delegations, and SMEs alike, Nitesh delivers accurate, context-aware interpretation that goes beyond words — ensuring deals close, partnerships form, and operations run smoothly.
-            </p>
+  About <span className="text-primary">Our Agency</span>
+</h2>
+
+<p className="text-muted-foreground leading-relaxed mb-4">
+  With over a decade of experience supporting communication between Chinese-speaking partners and Indian businesses, our agency specializes in high-stakes Mandarin translation and interpretation across industries. From boardroom negotiations to factory floors and international trade events, we enable conversations that move partnerships and operations forward.
+</p>
+
+<p className="text-muted-foreground leading-relaxed mb-8">
+  Our team has supported Fortune 500 companies, government delegations, and growing enterprises with accurate, context-aware interpretation that goes beyond literal translation. We focus on clarity, intent, and cultural nuance — ensuring communication is not just understood, but effective.
+</p>
+
 
             <div className="space-y-5">
               {highlights.map((h) => (
