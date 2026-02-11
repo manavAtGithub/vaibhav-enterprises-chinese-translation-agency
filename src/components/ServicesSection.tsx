@@ -5,47 +5,62 @@ import { Card, CardContent } from "@/components/ui/card";
 const services = [
   {
     icon: FileText,
-    title: "Chinese ↔ English Translation",
-    who: "Businesses, law firms, and agencies",
-    problem: "Miscommunication in contracts, documents, and correspondence can cost millions.",
-    why: "Our translators deliver accurate, context-aware translations ensuring every detail is preserved.",
+    title: "Technical & Industrial Document Translation",
+    who: "Steel plants, chemical manufacturers, engineering firms, legal teams",
+    problem:
+      "Errors in technical manuals, contracts, PLC documentation, or commissioning guides can halt operations and create compliance risks.",
+    why: "We provide precise translation of technical drawings, machinery manuals, BOQ documents, contracts, chemical process documentation, and engineering reports — preserving terminology accuracy and operational intent.",
   },
   {
     icon: Languages,
-    title: "Chinese ↔ Hindi Translation",
-    who: "Indian manufacturers & traders",
-    problem: "Language barriers between Chinese suppliers and Hindi-speaking teams slow down operations.",
-    why: "Our team provides direct Chinese-Hindi interpretation, eliminating the need for double translation.",
+    title: "Chinese ↔ English / Hindi Interpretation",
+    who: "Industrial teams, private clients, traders, and government bodies",
+    problem:
+      "Double translation or untrained interpreters lead to misinterpretation of technical instructions and business commitments.",
+    why: "Our interpreters deliver direct, real-time Chinese-English-Hindi communication during meetings, factory visits, private consultations, and official assignments — ensuring clarity and accuracy without distortion.",
+  },
+  {
+    icon: Languages,
+    title: "Japanese ↔ English / Hindi Interpretation",
+    who: "Industrial teams, private clients, traders, and government bodies",
+    problem:
+      "Double translation or untrained interpreters lead to misinterpretation of technical instructions and business commitments.",
+    why: "Our interpreters deliver direct, real-time Chinese-English-Hindi communication during meetings, factory visits, private consultations, and official assignments — ensuring clarity and accuracy without distortion.",
   },
   {
     icon: MessageSquare,
-    title: "Business Meetings & Negotiations",
-    who: "Corporates, investors, and joint ventures",
-    problem: "Nuance and tone get lost in high-stakes negotiations without a skilled interpreter.",
-    why: "We ensure your intent, authority, and proposals are communicated precisely by our seasoned interpreters.",
+    title: "Business Negotiations & Corporate Meetings",
+    who: "Corporates, investors, import–export businesses, and SMEs",
+    problem:
+      "High-stakes negotiations fail when tone, authority, or contractual nuance is misunderstood.",
+    why: "We support boardroom discussions, supplier negotiations, JV meetings, and executive calls with professional interpretation that protects your commercial interests and strategic intent.",
   },
   {
     icon: Factory,
-    title: "Factory Visits & Manufacturing",
-    who: "Import-export businesses and quality inspectors",
-    problem: "Technical miscommunication on the factory floor leads to defective products and delays.",
-    why: "Our interpreters bring specialized manufacturing vocabulary and on-site experience to keep your production on track.",
+    title: "Industrial Projects & Plant Commissioning",
+    who: "Steel plants, chemical units, machinery installers, EPC contractors",
+    problem:
+      "Miscommunication during installation, commissioning, or automation setup can cause costly delays and safety risks.",
+    why: "We provide on-site interpretation for Coke Oven Battery projects, CDQ systems, PLC & MCC panel installations, machinery commissioning, and manufacturing process coordination between Indian and Chinese engineers.",
   },
   {
     icon: Plane,
-    title: "Trade Fairs & Delegations",
-    who: "Government bodies, chambers of commerce, exhibitors",
-    problem: "Missing connections at trade events due to language gaps costs real business opportunities.",
-    why: "Our team provides fluent, professional interpretation to maximize every conversation at exhibitions and summits.",
+    title: "Government Delegations & Trade Engagements",
+    who: "Government departments, chambers of commerce, exporters, delegations",
+    problem:
+      "Diplomatic, regulatory, or trade discussions lose impact without culturally accurate interpretation.",
+    why: "Our team facilitates professional interpretation for official meetings, trade fairs, policy discussions, and cross-border industrial collaborations across India and China.",
   },
   {
     icon: Monitor,
-    title: "Remote Interpretation",
-    who: "Anyone needing virtual language support",
-    problem: "International video calls stall without real-time language assistance.",
-    why: "We deliver seamless interpretation via Zoom, WeChat, or Teams — as effective as being in the room.",
+    title: "Remote & One-to-One Interpretation",
+    who: "Private clients, startups, consultants, international partners",
+    problem:
+      "Virtual meetings and urgent discussions stall when real-time language support is unavailable.",
+    why: "We provide seamless remote interpretation via Zoom, WeChat, and Teams, along with personalized one-to-one consultation and document review support for business and private requirements.",
   },
 ];
+
 
 const ServicesSection = () => {
   return (

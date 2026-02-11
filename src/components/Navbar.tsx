@@ -23,7 +23,7 @@ const Navbar = () => {
           href="#home"
           className="font-serif text-2xl font-bold text-primary tracking-tight"
         >
-          Vaibhav Enterprises
+          Vaibhav Language Translation Services
         </a>
 
         {/* Desktop */}

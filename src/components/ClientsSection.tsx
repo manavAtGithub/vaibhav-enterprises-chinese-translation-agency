@@ -1,20 +1,55 @@
 import { motion } from "framer-motion";
-import dmrcLogo from "@/assets/Delhi_Metro_logo.svg.png"
-import iittm from "@/assets/Indian_Institute_of_Travel_and_Tourism_Management_Logo.svg.png"
-import jspl from "@/assets/Jindal_Steel_and_Power_Logo.svg.png"
-import dtt from "@/assets/Logo_of_Delhi_Tourism.png"
-import acre from "@/assets/trs_img_20.png"
-import tatasteel from "@/assets/tata-steel-logo-blue-background-wur617j4ikw1llzc-wur617j4ikw1llzc.png"
-import hzl from "@/assets/HZL_Logo.png"
+import dmrcLogo from "@/assets/Delhi_Metro_logo.svg.png";
+import iittm from "@/assets/Indian_Institute_of_Travel_and_Tourism_Management_Logo.svg.png";
+import jspl from "@/assets/Jindal_Steel_and_Power_Logo.svg.png";
+import dtt from "@/assets/Logo_of_Delhi_Tourism.png";
+import acre from "@/assets/trs_img_20.png";
+import tatasteel from "@/assets/tata-steel-logo-blue-background-wur617j4ikw1llzc-wur617j4ikw1llzc.png";
+import hzl from "@/assets/HZL_Logo.png";
+import cokeOven from "@/assets/gallery/coke-oven-battery.jpg"
+import chemicalPlant from "@/assets/gallery/neogen-chemicals-slashes-revenue-forecast-following-dahej-plant-fire.jpg"
+import machineryInstall from "@/assets/gallery/Hindustan Zinc Ltd.jpg"
+import steelCommissioning from "@/assets/gallery/tsk-bf3-furnace.jpg"
+import engineeringMeeting from "@/assets/gallery/tsk-bf2-group.jpg"
+import chinaTraining from "@/assets/gallery/igi-delhi.webp"
+import dmrc from "@/assets/gallery/dmrc.avif"
+import angul from "@/assets/gallery/angul.jpeg"
 
 const galleryItems = [
-  "Factory Inspection",
-  "Supplier Negotiation",
-  "Trade Expo",
-  "Government Delegation",
-  "Quality Audit",
-  "Business Summit",
+  {
+    title: "Coke Oven Battery Expansion Project",
+    image: cokeOven,
+  },
+  {
+    title: "Chemical Plant Interpretation",
+    image: chemicalPlant,
+  },
+  {
+    title: "Industrial Machinery Installation",
+    image: machineryInstall,
+  },
+  {
+    title: "Steel Plant Commissioning Support",
+    image: steelCommissioning,
+  },
+  {
+    title: "Engineering Coordination Meetings",
+    image: engineeringMeeting,
+  },
+  {
+    title: "Cross-Border Technical Training (India–China)",
+    image: chinaTraining,
+  },
+  {
+    title: "Cross-Border Technical Training (India–China)",
+    image: dmrc,
+  },
+  {
+    title: "Cross-Border Technical Training (India–China)",
+    image: angul,
+  },
 ];
+
 
 const clients = [
   { name: "DMRC", logo: dmrcLogo },
@@ -44,16 +79,24 @@ const ClientsSection = () => {
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-14">
           {galleryItems.map((item, i) => (
             <motion.div
-              key={item}
+              key={item.title}
               initial={{ opacity: 0, scale: 0.95 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: i * 0.08 }}
-              className="aspect-video bg-accent rounded-xl flex items-center justify-center border border-border"
+              className="relative aspect-video rounded-xl overflow-hidden border border-border group"
             >
-              <span className="text-accent-foreground/60 text-sm font-medium text-center px-4">
-                {item}
-              </span>
+              <img
+                src={item.image}
+                alt={item.title}
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              />
+
+              <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center px-4">
+                <span className="text-white text-sm font-medium text-center">
+                  {item.title}
+                </span>
+              </div>
             </motion.div>
           ))}
         </div>

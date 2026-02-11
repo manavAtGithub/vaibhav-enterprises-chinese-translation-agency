@@ -195,10 +195,10 @@ const VisaFrro = () => {
   return (
     <HelmetProvider>
       <Helmet>
-        <title>Visa & FRRO Services in India | Vaibhav Enterprises</title>
+        <title>Visa & FRRO Services in India | Vaibhav Language Translation Services </title>
         <meta
           name="description"
-          content="Vaibhav Enterprises — Complete FRRO registration, visa extension, residential permit, exit permit and visa application services in India. Expert agency assistance for foreign nationals."
+          content="Vaibhav Language Translation Services — Complete FRRO registration, visa extension, residential permit, exit permit and visa application services in India. Expert agency assistance for foreign nationals."
         />
       </Helmet>
 
@@ -206,7 +206,7 @@ const VisaFrro = () => {
       <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur border-b border-border">
         <nav className="container mx-auto flex items-center justify-between h-16 px-4">
           <Link to="/" className="font-serif text-2xl font-bold text-primary tracking-tight">
-            Vaibhav Enterprises
+            Vaibhav Language Translation Services
           </Link>
           <Button variant="outline" size="sm" asChild>
             <Link to="/">

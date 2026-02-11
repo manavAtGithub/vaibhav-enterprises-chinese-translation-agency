@@ -13,7 +13,7 @@ const Footer = () => {
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           <div>
             <h3 className="font-serif text-xl font-bold mb-3">
-              Vaibhav Enterprises
+              Vaibhav Language Translation Services
             </h3>
             <p className="text-sm text-background/70 leading-relaxed">
               Professional Chinese (Mandarin) Translation & Interpretation
@@ -50,8 +50,8 @@ const Footer = () => {
 
         <div className="border-t border-background/20 pt-6 text-center">
           <p className="text-xs text-background/50">
-            © {new Date().getFullYear()} Vaibhav Enterprises — Chinese
-            Translation & Interpretation Services. All rights reserved.
+            © {new Date().getFullYear()} Vaibhav Language Translation Services —
+            Chinese Translation & Interpretation Services. All rights reserved.
             <p className="text-xs text-gray-400 mt-2">
               Website by{" "}
               <a

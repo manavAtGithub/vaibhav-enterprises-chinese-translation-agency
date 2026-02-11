@@ -4,21 +4,22 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const testimonials = [
   {
-    name: "Rajesh Mehta",
-    company: "Mehta Exports Pvt. Ltd.",
-    text: "The team at Vaibhav Enterprises delivered flawless interpretation during our factory visits to Guangzhou. They understood both technical and business nuances, which helped us close a critical supplier deal.",
+    name: "Project Engineering Head",
+    company: "Integrated Steel Manufacturing Unit",
+    text: "They supported our Coke Oven Battery expansion and commissioning phase with precise technical interpretation between Indian and Chinese engineers. Their understanding of PLC systems, MCC panels, and plant operations ensured smooth execution without communication gaps.",
   },
   {
-    name: "Li Wei",
-    company: "SANY Heavy Industry",
-    text: "Working with Vaibhav Enterprises in India felt seamless. Their interpreters' Hindi and English fluency combined with native-level Mandarin made our delegation visit highly productive.",
+    name: "Operations Director",
+    company: "Chemical Manufacturing Company",
+    text: "During machinery installation and chemical process coordination, their interpreters accurately translated complex discussions involving Bromination and Grignard chemistry. This minimized downtime and prevented costly operational misunderstandings.",
   },
   {
-    name: "Priya Sharma",
-    company: "CII Western Region",
-    text: "We've engaged Vaibhav Enterprises for multiple trade expos and B2B matchmaking events. Their professionalism, reliability, and accuracy consistently exceed expectations.",
+    name: "Trade & Investment Coordinator",
+    company: "Export Promotion Council",
+    text: "We engaged the team for industrial delegation meetings and cross-border trade discussions. Their structured, professional interpretation maintained clarity in technical, regulatory, and commercial negotiations throughout the engagement.",
   },
 ];
+
 
 const TestimonialsSection = () => {
   return (

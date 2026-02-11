@@ -21,7 +21,7 @@ const ContactSection = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     const text = encodeURIComponent(
-      `Hi Vaibhav Enterprises, I'm ${form.name}.\n\nRequirement: ${form.requirement}\nMessage: ${form.message}\n\nPhone: ${form.phone}\nEmail: ${form.email}`
+      `Hi Vaibhav Language Translation Services, I'm ${form.name}.\n\nRequirement: ${form.requirement}\nMessage: ${form.message}\n\nPhone: ${form.phone}\nEmail: ${form.email}`,
     );
     window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${text}`, "_blank");
   };
@@ -31,10 +31,14 @@ const ContactSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-14">
           <h2 className="text-3xl md:text-4xl font-serif font-bold text-foreground mb-4">
-            Contact <span className="text-primary">Vaibhav Enterprises</span>
+            Contact{" "}
+            <span className="text-primary">
+              Vaibhav Language Translation Services
+            </span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Need a Chinese translator or interpreter? Request a quote from our team — we'll get back to you within 24 hours.
+            Need a Chinese translator or interpreter? Request a quote from our
+            team — we'll get back to you within 24 hours.
           </p>
         </div>
 
@@ -92,11 +96,19 @@ const ContactSection = () => {
                   <SelectValue placeholder="Select requirement" />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="Document Translation">Document Translation</SelectItem>
-                  <SelectItem value="Business Meeting Interpretation">Business Meeting Interpretation</SelectItem>
+                  <SelectItem value="Document Translation">
+                    Document Translation
+                  </SelectItem>
+                  <SelectItem value="Business Meeting Interpretation">
+                    Business Meeting Interpretation
+                  </SelectItem>
                   <SelectItem value="Factory Visit">Factory Visit</SelectItem>
-                  <SelectItem value="Trade Fair / Exhibition">Trade Fair / Exhibition</SelectItem>
-                  <SelectItem value="Remote Interpretation">Remote Interpretation</SelectItem>
+                  <SelectItem value="Trade Fair / Exhibition">
+                    Trade Fair / Exhibition
+                  </SelectItem>
+                  <SelectItem value="Remote Interpretation">
+                    Remote Interpretation
+                  </SelectItem>
                   <SelectItem value="Other">Other</SelectItem>
                 </SelectContent>
               </Select>
@@ -126,7 +138,9 @@ const ContactSection = () => {
             className="space-y-8"
           >
             <div>
-              <h3 className="font-serif font-semibold text-xl text-foreground mb-4">Direct Contact</h3>
+              <h3 className="font-serif font-semibold text-xl text-foreground mb-4">
+                Direct Contact
+              </h3>
               <div className="space-y-4">
                 <a
                   href={`https://wa.me/${WHATSAPP_NUMBER}`}
@@ -155,9 +169,13 @@ const ContactSection = () => {
             </div>
 
             <div className="bg-accent rounded-xl p-6 border border-border">
-              <h3 className="font-serif font-semibold text-lg text-foreground mb-2">Quick Response Guaranteed</h3>
+              <h3 className="font-serif font-semibold text-lg text-foreground mb-2">
+                Quick Response Guaranteed
+              </h3>
               <p className="text-sm text-muted-foreground">
-                Our team responds to all inquiries within 24 hours. For urgent requirements, reach out directly via WhatsApp for the fastest response.
+                Our team responds to all inquiries within 24 hours. For urgent
+                requirements, reach out directly via WhatsApp for the fastest
+                response.
               </p>
             </div>
           </motion.div>
