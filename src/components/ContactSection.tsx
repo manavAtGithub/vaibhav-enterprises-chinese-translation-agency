@@ -110,7 +110,7 @@ const ContactSection = () => {
                 rows={4}
                 value={form.message}
                 onChange={(e) => setForm({ ...form, message: e.target.value })}
-                placeholder="Tell us about your project or requirement..."
+                placeholder="Tell me about your project or requirement..."
               />
             </div>
             <Button type="submit" size="lg" className="w-full text-base">

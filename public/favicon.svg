@@ -2,11 +2,11 @@
   <!-- Background -->
   <rect width="64" height="64" rx="14" fill="#FFFFFF"/>
 
-  <!-- Subtle border -->
+  <!-- Border (subtle grey) -->
   <rect x="1" y="1" width="62" height="62" rx="13"
         fill="none" stroke="#E5E7EB" stroke-width="2"/>
 
-  <!-- Stylized N inspired by Chinese strokes -->
-  <path d="M22 46V18h5l15 20V18h5v28h-5L27 26v20z"
+  <!-- Letter N -->
+  <path d="M22 44V20h6l14 18V20h6v24h-6L28 28v16z"
         fill="#14B8A6"/>
 </svg>

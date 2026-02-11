@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { ShieldCheck, Handshake, BookOpen } from "lucide-react";
+import aboutPhoto from "@/assets/nitesh-raj.jpeg"
 
 const highlights = [
   { icon: Handshake, title: "Cultural Bridge", desc: "Our team's deep understanding of both Chinese and Indian business cultures ensures seamless communication." },
@@ -12,16 +13,28 @@ const AboutSection = () => {
     <section id="about" className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-12 items-center">
-          {/* Photo placeholder */}
           <motion.div
-            initial={{ opacity: 0, x: -40 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="bg-accent rounded-2xl aspect-[4/5] flex items-center justify-center"
-          >
-            <span className="text-accent-foreground/50 text-sm font-medium">Agency Photo</span>
-          </motion.div>
+  initial={{ opacity: 0, x: -40 }}
+  whileInView={{ opacity: 1, x: 0 }}
+  viewport={{ once: true }}
+  transition={{ duration: 0.6 }}
+  className="bg-accent rounded-2xl aspect-[4/5] overflow-hidden"
+>
+  {aboutPhoto ? (
+    <img
+      src={aboutPhoto}
+      alt="Agency professional interpretation work"
+      className="w-full h-full object-cover"
+    />
+  ) : (
+    <div className="flex items-center justify-center h-full">
+      <span className="text-accent-foreground/50 text-sm font-medium">
+        Professional Photo
+      </span>
+    </div>
+  )}
+</motion.div>
+
 
           <motion.div
             initial={{ opacity: 0, x: 40 }}

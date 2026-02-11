@@ -42,6 +42,12 @@ const Navbar = () => {
                   {l.label}
                 </a>
               )}
+              <a
+                href={l.href}
+                className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
+              >
+                {l.label}
+              </a>
             </li>
           ))}
         </ul>
@@ -85,6 +91,13 @@ const Navbar = () => {
                     {l.label}
                   </a>
                 )}
+                <a
+                  href={l.href}
+                  className="text-base font-medium text-muted-foreground hover:text-primary transition-colors"
+                  onClick={() => setOpen(false)}
+                >
+                  {l.label}
+                </a>
               </li>
             ))}
             <li>

@@ -12,9 +12,13 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           <div>
-            <h3 className="font-serif text-xl font-bold mb-3">Vaibhav Enterprises</h3>
+            <h3 className="font-serif text-xl font-bold mb-3">
+              Vaibhav Enterprises
+            </h3>
             <p className="text-sm text-background/70 leading-relaxed">
-              Professional Chinese (Mandarin) Translation & Interpretation agency based in India. Serving businesses, agencies, and government organizations.
+              Professional Chinese (Mandarin) Translation & Interpretation
+              agency based in India. Serving businesses, agencies, and
+              government organizations.
             </p>
           </div>
 
@@ -23,7 +27,10 @@ const Footer = () => {
             <ul className="space-y-2">
               {quickLinks.map((l) => (
                 <li key={l.href}>
-                  <a href={l.href} className="text-sm text-background/70 hover:text-background transition-colors">
+                  <a
+                    href={l.href}
+                    className="text-sm text-background/70 hover:text-background transition-colors"
+                  >
                     {l.label}
                   </a>
                 </li>
@@ -43,7 +50,19 @@ const Footer = () => {
 
         <div className="border-t border-background/20 pt-6 text-center">
           <p className="text-xs text-background/50">
-            © {new Date().getFullYear()} Vaibhav Enterprises — Chinese Translation & Interpretation Services. All rights reserved.
+            © {new Date().getFullYear()} Vaibhav Enterprises — Chinese
+            Translation & Interpretation Services. All rights reserved.
+            <p className="text-xs text-gray-400 mt-2">
+              Website by{" "}
+              <a
+                href="https://your-portfolio-link.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-teal-500 hover:text-teal-600 transition-colors duration-200 underline-offset-2 hover:underline"
+              >
+                Manav
+              </a>
+            </p>
           </p>
         </div>
       </div>

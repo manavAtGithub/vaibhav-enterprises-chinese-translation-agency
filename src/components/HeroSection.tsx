@@ -23,7 +23,7 @@ const HeroSection = () => {
             className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-foreground leading-tight mb-6"
           >
             Professional Chinese (Mandarin){" "}
-            <span className="text-primary">Translation & Interpretation</span> Services – India
+            <span className="text-primary">Translator & Interpreter</span> – India
           </motion.h1>
 
           <motion.p
