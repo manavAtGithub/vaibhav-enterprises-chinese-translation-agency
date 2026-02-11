@@ -12,28 +12,30 @@ const services = [
     why: "We provide precise translation of technical drawings, machinery manuals, BOQ documents, contracts, chemical process documentation, and engineering reports — preserving terminology accuracy and operational intent.",
   },
   {
-    icon: Languages,
-    title: "Chinese ↔ English / Hindi Interpretation",
-    who: "Industrial teams, private clients, traders, and government bodies",
-    problem:
-      "Double translation or untrained interpreters lead to misinterpretation of technical instructions and business commitments.",
-    why: "Our interpreters deliver direct, real-time Chinese-English-Hindi communication during meetings, factory visits, private consultations, and official assignments — ensuring clarity and accuracy without distortion.",
-  },
-  {
-    icon: Languages,
-    title: "Japanese ↔ English / Hindi Interpretation",
-    who: "Industrial teams, private clients, traders, and government bodies",
-    problem:
-      "Double translation or untrained interpreters lead to misinterpretation of technical instructions and business commitments.",
-    why: "Our interpreters deliver direct, real-time Chinese-English-Hindi communication during meetings, factory visits, private consultations, and official assignments — ensuring clarity and accuracy without distortion.",
-  },
-  {
     icon: MessageSquare,
     title: "Business Negotiations & Corporate Meetings",
     who: "Corporates, investors, import–export businesses, and SMEs",
     problem:
       "High-stakes negotiations fail when tone, authority, or contractual nuance is misunderstood.",
     why: "We support boardroom discussions, supplier negotiations, JV meetings, and executive calls with professional interpretation that protects your commercial interests and strategic intent.",
+  },
+  {
+    icon: Languages,
+    title: "Multilingual Interpretation Services",
+    who: "Inndustry, corporates, government & private clients",
+    problem:
+      "Language gaps in high-stakes discussions cause costly misunderstandings.",
+    why: (
+      <>
+        <strong>Chinese ↔ English/Hindi</strong> <br />
+        <strong>Japanese ↔ English/Hindi</strong> <br />
+        <strong>Korean ↔ English/Hindi</strong> <br />
+        <strong>Russian ↔ English/Hindi</strong> <br />
+        <strong>German ↔ English/Hindi</strong> <br />
+        <strong>Spanish ↔ English/Hindi</strong> <br />
+        <strong>Portuguese ↔ English/Hindi</strong>
+      </>
+    ),
   },
   {
     icon: Factory,
